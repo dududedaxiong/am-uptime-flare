@@ -1,6 +1,6 @@
 const pageConfig = {
   // Title for your status page
-  title: "dududedaxiong的监控界面's Status Page",
+  title: "监控界面's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://mickvvw-qinglong.hf.space/', label: '青龙面板', highlight: true },
