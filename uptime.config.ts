@@ -1,12 +1,10 @@
 const pageConfig = {
   // Title for your status page
-  title: "数字套利 •「AM科技」's Status Page",
+  title: "dududedaxiong的监控界面's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://amclubss.com', label: '博客', highlight: true },
-    { link: 'https://809098.xyz', label: 'Blog'},
-    { link: 'https://youtube.com/@AM_CLUBS', label: 'YouTube' },
-    { link: 'https://github.com/amclubs', label: 'GitHub' }, 
+    { link: 'https://mickvvw-qinglong.hf.space/', label: '青龙面板', highlight: true },
+    
   ],
 }
 
@@ -20,17 +18,17 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'am.809098.xyz',
+      id: 'qinglong.hf.space',
       // `name` is used at status page and callback message
-      name: '博客',
+      name: '青龙面板',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://am.809098.xyz',
+      target: 'https://mickvvw-qinglong.hf.space/',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://am.809098.xyz',
+      statusPageLink: 'https://mickvvw-qinglong.hf.space/',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       // expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
@@ -48,18 +46,7 @@ const workerConfig = {
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
       // checkLocationWorkerRoute: 'https://am.809098.xyz',
     },
-    // Example TCP Monitor
-    {
-      id: '809098.xyz',
-      name: 'Blog',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://809098.xyz',
-      tooltip: 'My production server monitor',
-      statusPageLink: 'https://809098.xyz',
-      timeout: 10000,
-    },
+
   ],
   notification: {
     // [Optional] apprise API server URL
